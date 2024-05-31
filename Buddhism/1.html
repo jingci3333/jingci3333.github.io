@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>文章列表效果</title>
+    <style>
+        aside {
+            width: 200px;
+            height: 300px;
+        }
+
+        h3 {
+            font-size: 18px;
+            /* 设置字体大小 */
+            font-weight: 600;
+            /* 设置字体粗细 */
+
+            text-align: center;
+            /* 设置字体水平方向居中对齐 */
+        }
+
+        ul {
+            list-style: none;
+            /* 去掉无序列表的项目符号 */
+            padding: 0;
+            /* 去掉无序列表的项目符号所在空间 */
+        }
+
+        ul>li {
+            padding: 10px;
+            border-top: 1px dashed lightgrey;
+            /* 处理文本内容溢出后的情况 */
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        ul>li>a {
+            color: black;
+            text-decoration: none;
+            /* 去掉链接元素文本内容的下划线 */
+
+            white-space: nowrap;
+            /* 强制文本内容在一行显示 */
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+    <aside>元素实现HTML页面侧边栏容器
+ -->
+    <aside>
+        <!-- 定义侧边栏的标题 -->
+        <h3>佛说</h3>
+        <!-- 定义文章列表 -->
+        <ul>
+            <li><a href="#">佛说护净经</a></li>
+            <li><a href="#">佛说无量寿经</a></li>
+            <li><a href="#">佛说阿弥陀经</a></li>
+            <li><a href="#">待编辑</a></li>
+         
+        </ul>
+    </aside>
+</body>
+
+</html>
